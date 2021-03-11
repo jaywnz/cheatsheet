@@ -1,0 +1,118 @@
+/* cheatsheet.nz */
+
+/* Main grid layout */
+
+body {
+    margin: 1em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+}
+
+body {
+    background-color: #2d2d2d;
+    color: #b9b9b9;
+}
+
+footer {
+    text-align: center;
+    margin: 1em 0;
+}
+
+footer > span {
+    font-size: 0.8em;
+}
+
+/* Flexbox items */
+
+.item {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    padding: 0.5em;
+    border-radius: 3px;
+}
+
+/* .item:hover {
+    background-color: #959595;
+    color: #2d2d2d;
+}
+
+.item:hover > .ref {
+    color: #2d2d2d;
+} */
+
+.item > h4 {
+    background-color: #1c1c1c;
+    color: #ededed;
+    margin: 0;
+    padding: 0.4em;
+    border-radius: 3px;
+}
+
+.item > ul {
+    margin-top: 1em;
+}
+
+figure {
+    margin: 1em auto;
+}
+
+figure > img {
+    width: 15em;
+    border-radius: 3px;
+}
+
+/* Typography */
+
+h1 {
+    color: #f46e6e;
+    margin: 0;
+}
+
+figure > figcaption {
+    font-family: Monaco,Bitstream Vera Sans Mono,"Lucida Console",Terminal;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.section-title {
+    color: #f46e6e;
+    margin: 2em 0 0.5em 0;
+}
+
+p {
+    margin: 1em 0.5em 0 0.5em;
+    font-family: Monaco,Bitstream Vera Sans Mono,"Lucida Console",Terminal;
+    font-size: 0.75em;
+}
+
+ul {
+    font-size: 0.8em;
+    list-style-type: circle;
+}
+
+.item ul {
+    font-family: Monaco,Bitstream Vera Sans Mono,"Lucida Console",Terminal;
+    font-size: 0.8em;
+    list-style-type: circle;
+    flex: 1;
+}
+
+a {
+    color: #959595;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b9b9b9;
+}
+
+body > a {
+    float: right;
+    font-size: 0.7em;
+}

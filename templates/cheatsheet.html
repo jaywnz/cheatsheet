@@ -1,0 +1,52 @@
+<!-- cheatsheet.io
+November 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>cheatsheet.nz</title>
+</head>
+
+<body>
+    <header>
+        <h1>cheatsheet.nz</h1>
+        <h2 id="sheet-title">{{ sheet[0].sheet_name }}</h2>
+        <nav>
+            <ul id="topnav">
+                {%- for j in category %}
+                <li><a href="{{ url_for('index',_anchor=j.category_shortcode) }}">{{ j.category_name }}</a></li>
+                {%- endfor %}
+            </ul>
+        </nav>
+    </header>
+    {%- for k in category %}
+    <h3 class="section-title" id="{{ k.category_shortcode }}">{{ k.category_name }}</h3>
+    <div class="grid-wrapper">
+        {%- for l in content -%}
+        {%- if l.content_category == k.category_id %}
+        <div class="item">
+            <h4>{{ l.content_title }}</h4>
+            {%- if l.content_image is not none %}
+            <figure>
+                <img src="{{ url_for('static', filename='img/' + l.content_image) }}" alt="{{ l.content_caption }}">
+                <figcaption>{{ l.content_caption }}</figcaption>
+            </figure>
+            {%- endif %}
+            <p>{{ l.content_body }}</p>
+        </div>
+        {%- endif %}
+        {%- endfor %}
+    </div>
+    <a href="#">&utrif; Top</a>
+    {%- endfor %}
+    <footer>
+        <span>{{ sheet[0].sheet_source|safe }} Made with &#x1f95d; in New Zealand.</span>
+    </footer>
+</body>
+
+</html>
