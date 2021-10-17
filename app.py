@@ -1,5 +1,6 @@
 # cheatsheet.nz
 # November 2020
+# Author: jaywnz
 
 import sqlite3
 
