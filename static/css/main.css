@@ -4,7 +4,7 @@
 
 body {
     margin: 1em;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 .grid-wrapper {
@@ -75,7 +75,7 @@ h1 {
 }
 
 figure > figcaption {
-    font-family: Monaco,Bitstream Vera Sans Mono,"Lucida Console",Terminal;
+    font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     font-size: 0.75em;
     text-align: center;
 }
@@ -87,7 +87,7 @@ figure > figcaption {
 
 p {
     margin: 1em 0.5em 0 0.5em;
-    font-family: Monaco,Bitstream Vera Sans Mono,"Lucida Console",Terminal;
+    font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     font-size: 0.75em;
 }
 
@@ -97,7 +97,7 @@ ul {
 }
 
 .item ul {
-    font-family: Monaco,Bitstream Vera Sans Mono,"Lucida Console",Terminal;
+    font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     font-size: 0.8em;
     list-style-type: circle;
     flex: 1;

@@ -7,3 +7,5 @@
 Running on Gunicorn/Heroku.
 
 - [App URL](https://cheatsheet-nz.herokuapp.com/)
+
+Inspired by [Emmet Documentation](https://github.com/emmetio/emmet-docs). Colour scheme from [Solarized](https://github.com/altercation/solarized).
