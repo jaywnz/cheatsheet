@@ -14,8 +14,8 @@ body {
 }
 
 body {
-    background-color: #2d2d2d;
-    color: #b9b9b9;
+    background-color: #fdf6e3;
+    color: #657b83;
 }
 
 footer {
@@ -47,8 +47,8 @@ footer > span {
 } */
 
 .item > h4 {
-    background-color: #1c1c1c;
-    color: #ededed;
+    background-color: #2aa198;
+    color: #fdf6e3;
     margin: 0;
     padding: 0.4em;
     border-radius: 3px;
@@ -70,7 +70,7 @@ figure > img {
 /* Typography */
 
 h1 {
-    color: #f46e6e;
+    color: #cb4b16;
     margin: 0;
 }
 
@@ -81,7 +81,7 @@ figure > figcaption {
 }
 
 .section-title {
-    color: #f46e6e;
+    color: #cb4b16;
     margin: 2em 0 0.5em 0;
 }
 
@@ -104,12 +104,12 @@ ul {
 }
 
 a {
-    color: #959595;
+    color: #657b83;
     text-decoration: none;
 }
 
 a:hover {
-    color: #b9b9b9;
+    color: #93a1a1;
 }
 
 body > a {
